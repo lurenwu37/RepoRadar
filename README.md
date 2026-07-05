@@ -29,7 +29,7 @@ An automated Python-based GitHub trending and hot repositories radar. It fetches
 ├── README.zh.md               # Chinese documentation
 ├── .env.example               # Environment variables template
 └── src
-    └── zhoubaobot
+    └── RepoRadar
         ├── .env               # Your local configuration (Ignored by git)
         ├── feishu.py          # Feishu message sender & card template builder
         ├── fetcher.py         # GitHub API trending repositories collector
@@ -44,13 +44,13 @@ An automated Python-based GitHub trending and hot repositories radar. It fetches
 
 ## 🛠️ Environment Configuration
 
-Copy the `.env.example` template to `src/zhoubaobot/.env` and fill in your keys:
+Copy the `.env.example` template to `src/RepoRadar/.env` and fill in your keys:
 
 ```bash
-cp .env.example src/zhoubaobot/.env
+cp .env.example src/RepoRadar/.env
 ```
 
-Open `src/zhoubaobot/.env` and update the following:
+Open `src/RepoRadar/.env` and update the following:
 
 - **`FEISHU_WEBHOOK_URL`**: Your Feishu bot's Webhook URL.
 - **`AGNES_API_KEY`**: Your Agnes LLM API Key (can fallback to DeepSeek or OpenAI keys).
@@ -124,7 +124,7 @@ jobs:
           AGNES_MODEL: ${{ secrets.AGNES_MODEL }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          cd src/zhoubaobot
+          cd src/RepoRadar
           python3 index.py
 ```
 

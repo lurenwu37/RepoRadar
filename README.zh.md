@@ -29,7 +29,7 @@
 ├── README.zh.md               # 中文项目说明文档
 ├── .env.example               # 环境参数配置模板文件
 └── src
-    └── zhoubaobot
+    └── RepoRadar
         ├── .env               # 你的本地私密配置文件（Git 已忽略）
         ├── feishu.py          # 飞书卡片模板构建器及推送模块
         ├── fetcher.py         # 统一参数化 GitHub Search 数据抓取器
@@ -47,10 +47,10 @@
 首先将项目根目录下的配置文件模板 `.env.example` 复制到脚本工作目录中：
 
 ```bash
-cp .env.example src/zhoubaobot/.env
+cp .env.example src/RepoRadar/.env
 ```
 
-编辑 `src/zhoubaobot/.env`，根据你的实际情况配置对应的 Key：
+编辑 `src/RepoRadar/.env`，根据你的实际情况配置对应的 Key：
 
 - **`FEISHU_WEBHOOK_URL`**：你的飞书机器人 Webhook 地址（如果有多个，可在 `FEISHU_WEBHOOK_URLS` 中用英文逗号分隔）。
 - **`AGNES_API_KEY`**：你的 Agnes API 密钥（兼容 DeepSeek/OpenAI Key 格式）。
@@ -124,7 +124,7 @@ jobs:
           AGNES_MODEL: ${{ secrets.AGNES_MODEL }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          cd src/zhoubaobot
+          cd src/RepoRadar
           python3 index.py
 ```
 
