@@ -1,4 +1,4 @@
-**🇨🇳 中文** | [🇺🇸 English](README.md)
+[English](README.md)|**中文**
 
 # GitHub 热门仓库雷达系统 🚀
 

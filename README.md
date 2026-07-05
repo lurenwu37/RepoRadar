@@ -1,4 +1,4 @@
-[🇨🇳 中文](README.zh.md) | **🇺🇸 English**
+**English**|[中文](README.zh.md)  
 
 # GitHub Hot Repositories Radar 🚀
 
