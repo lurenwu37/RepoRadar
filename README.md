@@ -1,3 +1,5 @@
+[🇨🇳 中文](README.zh.md) | **🇺🇸 English**
+
 # GitHub Hot Repositories Radar 🚀
 
 An automated Python-based GitHub trending and hot repositories radar. It fetches the most starred repositories created within a specific date range, evaluates and scores them using the Agnes LLM, summarizes them into a structured dual-dimension recommended list ("What it is" and "What it does / Use cases"), and pushes highly readable interactive cards to your Feishu (Lark) group chats.
